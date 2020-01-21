@@ -14,7 +14,7 @@
 - npm install _(*Cette opération prends plusieurs minutes*)_
 - npm run dev _(Pour lancer l'application)_
 
-L'application est ensuite disponible sur http://localhost:3000/
+L'application est ensuite disponible sur http://localhost:5000/
 
 ## Membres du groupe :
 

@@ -6,7 +6,7 @@ const Comment = require("./database/models/comment.model");
 const MealStat = require("./database/models/mealstat.model");
 
 var app = express();
-let port = 8081;
+let port = process.env.PORT || 8081;
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", ["http://localhost:5000"]); // update to match the domain you will make the request from
