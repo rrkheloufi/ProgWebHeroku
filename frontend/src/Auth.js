@@ -3,13 +3,15 @@ import auth0 from "auth0-js";
 const authDomain = "dev-9faf5-o9.eu.auth0.com";
 const authClientId = "q618pz2fXtpYgmysdNzG0x9tkr1Ql2JS";
 
+const port = process.env.PORT || 5000;
+
 class Auth {
   constructor() {
     this.auth0 = new auth0.WebAuth({
       domain: authDomain,
       audience: "https://" + authDomain + "/userinfo",
       clientID: authClientId,
-      redirectUri: "http://localhost:5000/callback",
+      redirectUri: "http://localhost:" + port + "/callback",
       responseType: "id_token",
       scope: "openid profile email"
     });
@@ -64,7 +66,7 @@ class Auth {
 
   signOut() {
     this.auth0.logout({
-      returnTo: "http://localhost:5000",
+      returnTo: "http://localhost:" + port,
       clientID: authClientId
     });
   }

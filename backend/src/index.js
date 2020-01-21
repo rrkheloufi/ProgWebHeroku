@@ -7,9 +7,10 @@ const MealStat = require("./database/models/mealstat.model");
 
 var app = express();
 let port = 8081;
+const clientPort = process.env.PORT || 5000;
 
 app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", ["http://localhost:5000"]); // update to match the domain you will make the request from
+  res.header("Access-Control-Allow-Origin", ["http://localhost:"+clientPort+"]"); // update to match the domain you will make the request from
   res.header("Access-Control-Allow-Methods", "GET, POST, OPTIONS, PUT, DELETE");
   res.header(
     "Access-Control-Allow-Headers",
