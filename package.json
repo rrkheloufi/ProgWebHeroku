@@ -12,8 +12,8 @@
     "frontend": "npm start --prefix frontend",
     "installServer": "cd backend && npm install",
     "installFront": "cd frontend && npm install",
-    "postinstall": "concurrently \"npm run installServer --verbose\" \"npm run installFront --verbose\"",
-    "start": "concurrently \"npm run database\" \"npm run frontend\""
+    "start": "concurrently \"npm run database\" \"npm run frontend\"",
+    "postinstall": "concurrently \"npm run installServer --verbose\" \"npm run installFront --verbose\" && npm run start"
   },
   "keywords": [],
   "author": "",
