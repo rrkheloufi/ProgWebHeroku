@@ -1,0 +1,29 @@
+{
+  "name": "progweb",
+  "version": "1.0.0",
+  "description": "* Simon Griffault\r * Rayan Ryad Kheloufi\r * Laura Lamani",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rrkheloufi/ProgWeb.git"
+  },
+  "scripts": {
+    "database": "node backend/src/index.js",
+    "frontend": "npm start --prefix frontend",
+    "installServer": "cd backend && npm install",
+    "installFront": "cd frontend && npm install",
+    "postinstall": "concurrently \"npm run installServer --verbose\" \"npm run installFront --verbose\"",
+    "start": "concurrently \"npm run database\" \"npm run frontend\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rrkheloufi/ProgWeb/issues"
+  },
+  "homepage": "https://github.com/rrkheloufi/ProgWeb#readme",
+  "devDependencies": {
+    "concurrently": "^5.0.2"
+  },
+  "proxy": "http://localhost:8081"
+}

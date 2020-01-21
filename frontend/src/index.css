@@ -1,0 +1,204 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-top: 100px;
+}
+.comment-header {
+  background: #4c86a8;
+}
+
+.comment-card {
+  margin: 10px;
+}
+
+.logo {
+  width: 80px;
+}
+
+.pinMealImg {
+  width: 15%;
+  margin-bottom: 15px;
+}
+
+.del-comment-btn {
+  margin-right: 5px;
+}
+.navbar {
+  background-color: indianred;
+}
+
+.navbar-brand {
+  color: aliceblue;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.meal {
+  margin-bottom: 10px;
+  transition: box-shadow 0.3s;
+}
+
+.meal:hover {
+  box-shadow: 0 0 11px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.boxCard {
+  transition: box-shadow 0.3s;
+  background-color: #fcd7ad;
+  color: black;
+}
+
+.otherUserBoxCard {
+  transition: box-shadow 0.3s;
+  background-color: white;
+  color: black;
+}
+
+.boxCard:hover,
+.otherUserBoxCard:hover {
+  transform: scale(1.05);
+}
+
+.boxJumbotron {
+  background: #fcd7ad;
+  transition: box-shadow 0.3s;
+}
+
+.boxJumbotronOtherUser {
+  transition: box-shadow 0.3s;
+}
+
+.boxJumbotron:hover,
+.boxJumbotronOtherUser {
+  box-shadow: 0 0 11px rgba(0, 0, 0, 0.2);
+}
+
+.boxesButton {
+  margin-right: 10px;
+  background-color: #74121d;
+  color: white;
+}
+
+.buttonUpdateBox {
+  margin-left: 20px;
+  background-color: #ed9b40;
+}
+
+.boxThumbnail {
+  margin-bottom: 1%;
+  padding: 1%;
+}
+
+.thumbnailContainer {
+  padding: 5px;
+}
+
+.addInBoxButton {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  visibility: hidden;
+}
+
+.showAddBoxButton:hover .addInBoxButton {
+  visibility: visible;
+}
+
+.btn-circle.btn-xl {
+  border-radius: 35px;
+  line-height: 1.33;
+}
+
+.btn-circle {
+  border-radius: 15px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.42857;
+}
+
+.spinner-grow {
+  margin-left: 50px;
+}
+
+.searchBar,
+.filter {
+  border-color: #5bc0de;
+}
+
+.buttonSearchBar {
+  background-color: #49bee2;
+}
+
+.buttonRefreshMeals {
+  background-color: #2cacd3;
+}
+
+.searchBarBoxes {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.filter {
+  padding: 0px !important;
+}
+
+.meal-info {
+  padding: 10px;
+}
+.meal-info:hover,
+.ingredient:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+.instructions {
+  margin: 20px;
+}
+
+.dropdown.dropdown-lg .dropdown-menu {
+  margin-top: -1px;
+  padding: 6px 20px;
+}
+.input-group-btn .btn-group {
+  display: flex !important;
+}
+.btn-group .btn {
+  border-radius: 0;
+  margin-left: -1px;
+}
+.btn-group .btn:last-child {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.btn-group .form-horizontal .btn[type="submit"] {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.form-horizontal .form-group {
+  margin-left: 0;
+  margin-right: 0;
+}
+.form-group .form-control:last-child {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  #adv-search {
+    width: 500px;
+    margin: 0 auto;
+  }
+  .dropdown.dropdown-lg {
+    position: static !important;
+  }
+  .dropdown.dropdown-lg .dropdown-menu {
+    min-width: 500px;
+  }
+}
